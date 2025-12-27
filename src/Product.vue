@@ -7,7 +7,7 @@ import PopupCard from '@/Components/PopupCard.vue';
 import SketchUp from '@/Image/SketchUp.png';
 import Revit from '@/Image/Revit.png';
 import KlsBersama1 from '@/Image/klsBersama1.png';
-import KlsBersama2 from '@/Image/klsBersama2.png';
+//import KlsBersama2 from '@/Image/klsBersama2.png';
 import Rendering from '@/Image/Rendering.png';
 import Privat from '@/Image/Privat.jpg';
 import Button from '@/Components/Button.vue';
@@ -81,7 +81,7 @@ const classData = {
     },
     kelompok: {
       title: 'Bimbingan Kelompok (2-4 Anak)',
-      img: KlsBersama2,
+      //img: KlsBersama2,
       description: 'Mentorship kelompok untuk tim proyek atau grup belajar. Dapatkan bimbingan ahli dengan biaya lebih terjangkau.',
       materials: ['Kolaborasi Tim', 'Project Management', 'Review Kelompok', 'Presentasi Akhir'],
       pricing: [
