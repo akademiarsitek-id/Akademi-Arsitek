@@ -7,7 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:'/Akademi-Arsitek-ID/',
+  base: '/Akademi-Arsitek/',
   plugins: [
     vue(),
     tailwindcss(),
