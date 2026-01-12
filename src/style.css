@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-Montserrat: "Montserrat", sans-serif;
+  --font-Roboto-Mono: "Roboto Mono", monospace;
+
+
+  --color-background: #000000;
+  --color-navbar: #1A1A1A;
+  --color-navtext-hover: #FFFFFF;
+  --color-navtext: #B0B0B0;
+
+
+  --color-text: #FFFFFF;
+  --color-text-hover: #FFFFFF;
+  --color-subtext: #616161;
+
+  --color-line: #121212;
+  --color-oval-component: #121212;
+  --color-gold-carousel: #6F5701;
+  --color-white-carousel: #FFFFFF;
+
+
+  --color-footer-line: #FFFFFF;
+  --color-instagram-circle: #F176A7;
+  --color-tiktok-circle: #F17C76;
+  --color-whatsapp-circle: #78F176;
+  --color-email-circle: #F1C376;
+
+
+  --text-Home-title: 4rem;
+  --text-Home-subtitle: 1.25rem;
+  --text-subtitle: 1rem;
+  --text-Header1: 1rem;
+  --text-Header2: 0.875rem;
+  --text-Header3: 0.75rem;
+  --text-Header4: 0.625rem;
+
+
+
+
+}
