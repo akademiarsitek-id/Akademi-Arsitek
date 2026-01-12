@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Akademi-Arsitek/',
   plugins: [vue(), tailwindcss()],
   resolve: {
     alias: {
