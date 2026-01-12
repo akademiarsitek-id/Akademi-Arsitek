@@ -4,7 +4,8 @@ import About from './components/pages/AbouthUs.vue'
 import Product from './components/pages/OurProduct.vue'
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory('/Akademi-Arsitek/'),
+
 
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {
