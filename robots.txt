@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://akademiarsitek-id.github.io/Akademi-Arsitek/sitemap.xml
