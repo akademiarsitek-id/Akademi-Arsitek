@@ -114,7 +114,7 @@
                         </div>
                         <ScrollReveal direction="bottom" duration="2000" delay="0">
                             <h1 class="font-Montserrat font-regular text-center text-lg md:text-xl mt-4 text-black">Mentorship</h1>
-                            <p class="font-Montserrat font-light text-center text-sm md:text-md mt-2 text-black mx-2"><b>Kelas berkelompok (3-4 orang)</b> yang dirancang untuk belajar bersama secara interaktif dan kolaboratif. Cocok untuk Anda yang ingin berkembang sambil berdiskusi dengan peserta lain</p>
+                            <p class="font-Montserrat font-light text-center text-sm md:text-md mt-2 text-black mx-2"><b>Program mentorship</b> yang dirancang untuk belajar bersama secara interaktif dan kolaboratif. Cocok untuk Anda yang ingin berkembang sambil berdiskusi dengan mentor.</p>
                         </ScrollReveal>
                 </div>
             </div>
@@ -173,12 +173,12 @@
     
             <div 
                 ref="carouselContainer" 
-                class="flex overflow-x-auto gap-4 md:gap-6 max-w-7xl mx-auto px-6 pb-8 snap-x snap-mandatory scroll-smooth hide-scrollbar"
+                class="flex overflow-x-auto gap-4 md:gap-6 max-w-7xl mx-auto px-[7.5vw] md:px-6 pb-8 snap-x snap-mandatory scroll-smooth hide-scrollbar"
             >
                 <div 
                     v-for="product in filteredProducts" 
                     :key="product.id" 
-                    class="flex-none snap-center w-[85vw] max-w-[320px] md:w-96 md:max-w-none group py-4"
+                    class="flex-none snap-center w-[85vw] md:w-96 md:max-w-none group py-4"
                 >
                     <div class="w-full h-64 md:h-72 rounded-3xl border border-white overflow-hidden bg-black relative transition-transform duration-300 hover:scale-[1.02]">
 

@@ -8,16 +8,11 @@ const props = defineProps({
 
 const emit = defineEmits(['close']);
 
-// --- LOGIC WHATSAPP ---
 const whatsappLink = computed(() => {
-    // 1. Nomor Admin
-    const phoneNumber = '6285804069705'; 
 
-    // 2. Template Pesan (Mengambil Judul Produk secara otomatis)
-    // encodeURIComponent digunakan agar spasi dan simbol aman di URL
+    const phoneNumber = '6285804069705'; 
     const message = `Halo Admin, saya tertarik untuk mendaftar kelas *${props.product.title}*. Mohon informasi lebih lanjut.`;
     
-    // 3. Gabungkan menjadi Link
     return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 });
 </script>
