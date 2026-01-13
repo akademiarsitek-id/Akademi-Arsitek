@@ -62,6 +62,7 @@ const scroll = (direction) => {
 };
 
 onMounted(() => {
+    document.title = "About Us | Mengenal Akademi Arsitek";
     // Cek apakah carousel sudah ter-render
     if (carouselRef.value) {
         // Ambil elemen kartu pertama

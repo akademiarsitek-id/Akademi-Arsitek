@@ -1,7 +1,7 @@
 <script setup>
     import ScrollReveal from '@/components/ScrollReveal.vue'
     import DividerBadge from '@/components/DividerBadge.vue'
-    import { ref, computed } from 'vue'
+    import { ref, computed , onMounted } from 'vue'
     import { products } from '@/components/Data.js'
     import ProductModal from '@/components/ProductModal.vue'
 
@@ -56,7 +56,10 @@
             }
         }
     }
-
+    onMounted(()=>{
+        document.title = "Our Product | Paket penawaran kelas Akademi Arsitek";
+    })
+   
 
 </script>
 

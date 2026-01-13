@@ -30,6 +30,7 @@ const stopHeroAutoplay = () => {
 }
 
 onMounted(() => {
+    document.title = "Akademi Arsitek | Kursus Desain Arsitektur Praktis";
     startHeroAutoplay();
 });
 
