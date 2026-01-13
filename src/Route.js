@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from './components/pages/Home.vue'
 import About from './components/pages/AbouthUs.vue'
 import Product from './components/pages/OurProduct.vue'
 
 const router = createRouter({
-    history: createWebHistory('/Akademi-Arsitek/'),
+    history: createWebHashHistory('/Akademi-Arsitek/'),
 
 
     scrollBehavior(to, from, savedPosition) {

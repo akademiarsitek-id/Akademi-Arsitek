@@ -173,12 +173,12 @@
     
             <div 
                 ref="carouselContainer" 
-                class="flex overflow-x-auto gap-4 md:gap-6 max-w-7xl mx-auto px-[7.5vw] md:px-6 pb-8 snap-x snap-mandatory scroll-smooth hide-scrollbar"
+                class="flex overflow-x-auto gap-4 md:gap-6 max-w-7xl mx-auto px-0 md:px-6 pb-8 snap-x snap-mandatory scroll-smooth hide-scrollbar"
             >
                 <div 
                     v-for="product in filteredProducts" 
                     :key="product.id" 
-                    class="flex-none snap-center w-[85vw] md:w-96 md:max-w-none group py-4"
+                    class="flex-none snap-center w-[85vw] md:w-96 md:max-w-none group py-4 first:ml-[7.5vw] last:mr-[7.5vw] md:first:ml-0 md:last:mr-0"
                 >
                     <div class="w-full h-64 md:h-72 rounded-3xl border border-white overflow-hidden bg-black relative transition-transform duration-300 hover:scale-[1.02]">
 
