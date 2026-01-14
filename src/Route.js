@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from './components/pages/Home.vue'
 import About from './components/pages/AbouthUs.vue'
 import Product from './components/pages/OurProduct.vue'
+import NotFound from './components/pages/404.vue'
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -29,6 +30,11 @@ const router = createRouter({
             path: '/product',
             name: 'Product',
             component: Product
+        },
+        {
+            path: '/:pathMatch(.*)*',
+            name: 'NotFound',
+            component: NotFound
         }
     ]
 })
