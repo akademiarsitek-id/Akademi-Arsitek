@@ -21,16 +21,12 @@ const activeTab = ref('focus');
 const carouselRef = ref(null);
 
 const testimonials = [
-    { name: "Rian P.", role: "Mahasiswa Arsitektur", quote: "Materi teknisnya daging semua. Langsung kepake pas ngerjain tugas studio." },
-    { name: "Sarah A.", role: "Junior Architect", quote: "Akhirnya paham workflow BIM yang bener. Di kampus cuma diajarin basic doang." },
-    { name: "Dimas K.", role: "Freelancer", quote: "Balik modal kursus dalam 1 bulan karena dapet proyek renderan baru dari skill ini." },
-    { name: "Putri L.", role: "Fresh Graduate", quote: "Portofolio aku jadi jauh lebih standout. Langsung dapet panggilan interview." },
-    { name: "Kevin J.", role: "Interior Design Student", quote: "Mentoringnya asik, gak kaku. Rasanya kayak diajarin kating yang jago banget." },
-    { name: "Budi S.", role: "Drafter", quote: "Sangat membantu buat transisi dari AutoCAD 2D ke Revit. Efisiensi kerja naik 200%." },
-    { name: "Tia M.", role: "Arsitek Muda", quote: "Komunitasnya suportif. Seneng banget bisa networking sama praktisi lain di sini." },
-    { name: "Fajar N.", role: "Mahasiswa Tingkat Akhir", quote: "Modul rendering-nya juara. Hasil renderku sekarang udah kayak foto asli." },
-    { name: "Anita W.", role: "Jobseeker", quote: "Dulu bingung mau mulai karir dari mana, sekarang udah punya roadmap yang jelas." },
-    { name: "Reza O.", role: "Freelance 3D Artist", quote: "Investasi leher ke atas terbaik tahun ini. Materi update terus sesuai industri." }
+    { quote: "diajarin render sama tentor keren gacor parah 😆" },
+    { quote: "Lagi dan lagi makasih ya udh adain les ky ginian. aku gtau sih klo gda akademi mu inii" },
+    { quote: "secara keseluruhan pengalmanku cukupp berkesan. Admin-nya responsif dan komunikatif , mentornya jugaa bener2 oke." },
+    { quote: "Alasanku memilih kelas private karrena ingin pembelajaran yang benar - benar menyesuaikan kemampuan dan ritme belajarku sendiri dan itu memang terasa" },
+    { quote: "Akademi ini worth it sihh buat yang pengen upgrade skill" },
+    { quote: "Menntornya enak ngejelasinnya , bukan sekedar  wduh aku gabisa , tapi diusahaiin sampe bisa jelasin ke kita" }
 ];
 
 const contentData = {
@@ -69,13 +65,9 @@ onMounted(() => {
         const firstCard = carouselRef.value.firstElementChild;
         
         if (firstCard) {
-            // Hitung lebar kartu pertama + gap (gap-6 = 24px di Tailwind default)
-            // Kita pakai offsetWidth agar akurat sesuai layar (HP/Laptop beda lebar)
             const cardWidth = firstCard.offsetWidth;
-            const gap = 24; // Sesuai class 'gap-6'
+            const gap = 24; 
             
-            // Geser scroll ke kanan sejauh 1 kartu + gap
-            // behavior: 'auto' membuat geseran INSTAN (tidak animasi) jadi user tidak sadar
             carouselRef.value.scrollTo({
                 left: cardWidth + gap,
                 behavior: 'auto' 
@@ -119,7 +111,7 @@ onMounted(() => {
                                <ScrollReveal direction="left" duration="2000" delay="0">
                                     <img 
                                         class="w-auto h-20 md:h-48 object-contain drop-shadow-lg" 
-                                        src="@/components/img/TextAbouth.svg" 
+                                        src="@/components/img/TextAbout2.svg" 
                                         alt="about us"
                                     >
                                </ScrollReveal>
@@ -260,16 +252,11 @@ onMounted(() => {
                         <div class="absolute bottom-0 left-0 w-6 h-6 md:w-8 md:h-8 border-b-2 border-l-2 border-oval-component group-hover:border-white rounded-bl-xl transition-colors duration-300"></div>
                         <div class="absolute bottom-0 right-0 w-6 h-6 md:w-8 md:h-8 border-b-2 border-r-2 border-oval-component group-hover:border-white rounded-br-xl transition-colors duration-300"></div>
 
-                        <div class="px-5 py-6 md:px-6 md:py-8 flex flex-col justify-between h-full min-h-[200px] md:min-h-[220px]">
+                        <div class="px-5 py-6 md:px-6 md:py-8 flex flex-col justify-between h-full min-h-[200px] md:min-h-[220px] max-w-[320px]">
                             
                             <p class="font-Montserrat font-light text-sm md:text-base leading-relaxed text-gray-200 italic mb-4 md:mb-6">
                                 "{{ item.quote }}"
                             </p>
-
-                            <div class="border-t border-white/10 pt-4 mt-auto">
-                                <h4 class="font-Montserrat font-bold text-white text-sm md:text-base tracking-wide">{{ item.name }}</h4>
-                                <span class="font-Montserrat text-xs md:text-sm text-gray-400">{{ item.role }}</span>
-                            </div>
                         </div>
                     </div>
                 </div>

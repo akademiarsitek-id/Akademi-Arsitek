@@ -1,17 +1,18 @@
 <script setup>
 import { ref, watch, onMounted, onUnmounted } from 'vue';
-import Button from '@/components/Button.vue';
 import ScrollReveal from '@/components/ScrollReveal.vue';
 import DividerBadge from '@/components/DividerBadge.vue';
+import Tiktok from '@/components/icon/Tiktok.vue';
+import Instagram from '@/components/icon/Instagram.vue';
+import WhatsApp from '@/components/icon/WhatsApp.vue';
 
 
-// --- LOGIC HERO CAROUSEL ---
+
 const activeHeroIndex = ref(0);
 const heroItems = [
     { title: 'Keunggulan Kami', desc: 'Mentor Pembelajaran Yang profesional' },
     { title: 'Kurikulum Terkini', desc: 'Materi sesuai standar industri terbaru' },
-    { title: 'Komunitas Luas', desc: 'Jejaring arsitek dari seluruh Indonesia' },
-    { title: 'Sertifikasi Resmi', desc: 'Dapatkan sertifikat kompetensi yang diakui' }
+    { title: 'Komunitas Luas', desc: 'Jejaring arsitek dari seluruh Indonesia' }
 ];
 
 let heroInterval = null;
@@ -30,7 +31,7 @@ const stopHeroAutoplay = () => {
 }
 
 onMounted(() => {
-    document.title = "Akademi Arsitek | Kursus Desain Arsitektur Praktis";
+    document.title = "Akademi Arsitek | Kursus Software Arsitektur";
     startHeroAutoplay();
 });
 
@@ -45,13 +46,12 @@ const whyItems = [
     
     "Materi Praktis Materi disusun agar langsung bisa dipraktekkan | di dunia kerja tanpa teori yang bertele-tele.",
     
-    "Networking Luas Bergabung dengan ribuan alumni dan | arsitek profesional dari seluruh Indonesia.",
+    "Networking Luas Bergabung dengan alumni dan | arsitek profesional dari seluruh Indonesia."
     
-    "Sertifikasi Resmi Mendapatkan sertifikat resmi | yang diakui industri setelah lulus ujian."
 ];
 
 const whatCourse = [
-    "Kursus yang tersedia mulai dari kelas Revit, BIM, AutoCAD, dan | mulai dari kelas bersama, Kelas Bimbingan dan Kelas Privat."
+    "Kursus yang tersedia mulai dari kelas Revit, BIM, AutoCAD, | Photoshop mulai dari kelas bersama, Kelas Bimbingan dan Kelas Privat."
 ];
 
 const activeWhyIndex = ref(0);
@@ -113,11 +113,33 @@ watch(activeWhyIndex, () => activeLineIndex.value = 0);
     
                         <div class="justify-self-center md:justify-self-end self-center text-center md:text-left max-w-sm">
                             <p class="font-Montserrat text-gray-200 text-sm leading-relaxed">
-                                Akademi Arsitek adalah platform praktis bagi pemula untuk menguasai desain dan teknis bangunan.
+                                 Platform Penguasaan Software Arsitektur untuk semua kalangan , dari permula , menengah hingga tingkat lanjut.
                             </p>
-                            <div class="flex gap-4 justify-center md:justify-start mt-6">
-                                <Button variant="outline" href="https://wa.me/6285804069705">Whatsapp <img src="@/components/icon/whatsapp.svg" alt="" class="w-5 h-5 ml-2"/></Button>
-                                <Button variant="primary" href="https://www.instagram.com/akademiarsitek.id/">Instagram <img src="@/components/icon/instagram.svg" alt="" class="w-5 h-5 ml-2"/></Button>
+                            <div class="flex gap-1 md:gap-4 justify-center md:justify-start mt-6">
+                                <a 
+                                    href="https://www.instagram.com/akademiarsitek.id/" 
+                                    target="_blank"
+                                    class="group flex items-center justify-center gap-2 py-3 px-6 rounded-2xl border border-white text-white hover:bg-white hover:text-black transition-all duration-300 cursor-pointer"
+                                >
+                                    <Instagram class="w-5 h-5" />
+                                </a>
+                                
+                                <a 
+                                    href="https://www.tiktok.com/@akademi.arsitek" 
+                                    target="_blank"
+                                    class="group flex items-center justify-center gap-2 py-3 px-6 rounded-2xl border border-white text-white hover:bg-white hover:text-black transition-all duration-300 cursor-pointer"
+                                >
+                                    <Tiktok class="w-5 h-5" /> 
+                                </a>
+                                <a 
+                                    href="https://wa.me/6285804069705" 
+                                    target="_blank"
+                                    class="group flex items-center justify-center gap-2 py-3 px-6 rounded-2xl border border-white text-white hover:bg-white hover:text-black transition-all duration-300 cursor-pointer"
+                                >
+                                    <WhatsApp class="w-5 h-5" /> 
+                                </a>
+                                
+                                
                             </div>
                         </div>
                     </div>
@@ -245,10 +267,10 @@ watch(activeWhyIndex, () => activeLineIndex.value = 0);
                     >
                         {{ line.trim() }}
                     </p>
-                    <a href="#" class="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-sm group ml-8">
+                    <RouterLink to="/product" class="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-sm group ml-8">
                         <span class="group-hover:translate-x-1 transition-transform">↳</span> 
                         Telusuri Paket kelas kami sekarang juga
-                    </a>
+                    </RouterLink>
                     </div>
                 </div>
                 </ScrollReveal>
