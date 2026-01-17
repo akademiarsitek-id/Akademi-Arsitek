@@ -69,7 +69,9 @@ const whatsappLink = computed(() => {
                         <div class="space-y-3">
                             <div class="flex justify-between items-center p-4 border border-white/20 rounded-xl hover:border-white hover:bg-white/5 transition-all duration-300 group cursor-pointer">
                                 <div>
-                                    <p class="text-sm font-bold text-white group-hover:underline decoration-1 underline-offset-4">Basic</p>
+                                    <p class="text-sm font-bold text-white group-hover:underline decoration-1 underline-offset-4">
+                                        {{ product.category === 'Studio Class' ? 'Core' : 'Basic' }}
+                                    </p>
                                     <p class="text-xs text-gray-500">{{ product.time1 }} Duration</p>
                                 </div>
                                 <p class="text-lg font-bold text-white">{{ product.price1 }}</p>
@@ -77,7 +79,9 @@ const whatsappLink = computed(() => {
 
                             <div class="flex justify-between items-center p-4 border border-white/20 rounded-xl hover:border-white hover:bg-white/5 transition-all duration-300 group cursor-pointer">
                                 <div>
-                                    <p class="text-sm font-bold text-white group-hover:underline decoration-1 underline-offset-4">Standard</p>
+                                    <p class="text-sm font-bold text-white group-hover:underline decoration-1 underline-offset-4">
+                                        {{ product.category === 'Studio Class' ? 'Build' : 'Standard' }}
+                                    </p>
                                     <p class="text-xs text-gray-500">{{ product.time2 }} Duration</p>
                                 </div>
                                 <p class="text-lg font-bold text-white">{{ product.price2 }}</p>
@@ -85,7 +89,9 @@ const whatsappLink = computed(() => {
 
                             <div class="flex justify-between items-center p-4 border border-white/20 rounded-xl hover:border-white hover:bg-white/5 transition-all duration-300 group cursor-pointer">
                                 <div>
-                                    <p class="text-sm font-bold text-white group-hover:underline decoration-1 underline-offset-4">Premium</p>
+                                    <p class="text-sm font-bold text-white group-hover:underline decoration-1 underline-offset-4">
+                                        {{ product.category === 'Studio Class' ? 'Pro' : 'Premium' }}
+                                    </p>
                                     <p class="text-xs text-gray-500">{{ product.time3 }} Duration</p>
                                 </div>
                                 <p class="text-lg font-bold text-white">{{ product.price3 }}</p>
