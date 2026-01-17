@@ -101,7 +101,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                      <div class="w-full group p-4 bg-white rounded-3xl">
                         <div class="w-full object-cover rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/10 relative max-h-[400px]">
-                            <img src="@/components/img/Regular.webp" alt="Regular Class" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <img src="@/components/img/Regular.webp" alt="Regular Class" class="w-full h-full object-cover saturate-0 group-hover:saturate-100 transition-transform duration-700 group-hover:scale-110">
                         </div>
                         <ScrollReveal direction="bottom" duration="2000" delay="0">
                             <h1 class="font-Montserrat font-regular text-center text-lg md:text-xl mt-4 text-black">Regular Class</h1>
@@ -111,7 +111,7 @@
 
                     <div class="w-full group p-4 bg-white rounded-3xl">
                         <div class="w-full object-cover rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/10 relative max-h-[400px]">
-                            <img src="@/components/img/Private.webp" alt="Private Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <img src="@/components/img/Private.webp" alt="Private Studio" class="w-full h-full object-cover saturate-0 group-hover:saturate-100 transition-transform duration-700 group-hover:scale-110">
                         </div>
                         <ScrollReveal direction="bottom" duration="2000" delay="0">
                             <h1 class="font-Montserrat font-regular text-center text-lg md:text-xl mt-4 text-black">Private Studio</h1>
@@ -121,7 +121,7 @@
 
                     <div class="w-full group p-4 bg-white rounded-3xl">
                         <div class="w-full object-cover rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/10 relative max-h-[400px]">
-                            <img src="@/components/img/Bimbingan.webp" alt="Mentorship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <img src="@/components/img/Bimbingan.webp" alt="Mentorship" class="w-full h-full object-cover saturate-0 group-hover:saturate-100 transition-transform duration-700 group-hover:scale-110">
                         </div>
                         <ScrollReveal direction="bottom" duration="2000" delay="0">
                             <h1 class="font-Montserrat font-regular text-center text-lg md:text-xl mt-4 text-black">Mentorship</h1>

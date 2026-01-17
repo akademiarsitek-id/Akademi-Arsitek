@@ -111,7 +111,7 @@ onMounted(() => {
                                <ScrollReveal direction="left" duration="2000" delay="0">
                                     <img 
                                         class="w-auto h-20 md:h-48 object-contain drop-shadow-lg" 
-                                        src="@/components/img/TextAbout2.svg" 
+                                        src="@/components/img/TextAbouth.svg" 
                                         alt="about us"
                                     >
                                </ScrollReveal>

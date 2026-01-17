@@ -31,7 +31,7 @@ const resetActive = () => {
             <p class="font-Montserrat text-gray-300 text-sm md:text-base leading-relaxed max-w-xs">
                 Karena setiap garis memiliki arti. <br>
                 Mulai perjalanan arsitekturmu di sini.<br>
-                Lets Fly Together
+                'Lets Fly Together'
             </p>
         </div>
 
