@@ -11,3 +11,4 @@ Tech stack
 - Vue3
 - Vite
 - Tailwincss
+- Javascript
